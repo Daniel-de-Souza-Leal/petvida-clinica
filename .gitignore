@@ -1,0 +1,28 @@
+# Dependências
+node_modules/
+.npm/
+.pnpm-store/
+
+# Builds
+dist/
+build/
+out/
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

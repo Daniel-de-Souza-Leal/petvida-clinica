@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PetVida - Clínica Veterinária e Estética Animal">
+  <title>PetVida | Clínica Veterinária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="logo" href="#inicio"><span>🐾</span> PetVida</a>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#agenda">Agendamento</a>
+        <a href="#historico">Histórico</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn-small" href="#agenda">Agendar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="tag">Cuidado veterinário + estética pet</span>
+          <h1>Mais cuidado para o seu pet. Mais organização para você.</h1>
+          <p>A PetVida reúne agendamentos, serviços e informações do pet em uma experiência simples e organizada.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#agenda">Agendar atendimento</a>
+            <a class="btn btn-outline" href="#servicos">Conhecer serviços</a>
+          </div>
+          <div class="stats">
+            <div><strong>30+</strong><span>banhos por dia</span></div>
+            <div><strong>4</strong><span>veterinários</span></div>
+            <div><strong>1</strong><span>agenda integrada</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="pet-illustration">🐶</div>
+          <h3>Olá, tutor!</h3>
+          <p>Confira seu próximo atendimento.</p>
+          <div class="next-appointment">
+            <span>PRÓXIMO AGENDAMENTO</span>
+            <strong>Banho e tosa</strong>
+            <p>Hoje · 15:30 · Thor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="tag">Serviços</span>
+          <h2>Tudo em um só lugar</h2>
+          <p>Uma solução digital para reduzir conflitos de horários e facilitar o acompanhamento dos pets.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">🩺</div><h3>Consultas</h3><p>Agende consultas e acompanhe o atendimento veterinário.</p></article>
+          <article class="card"><div class="icon">💉</div><h3>Vacinação</h3><p>Organize vacinas e lembretes para retornos preventivos.</p></article>
+          <article class="card"><div class="icon">✂️</div><h3>Banho e tosa</h3><p>Escolha o serviço e consulte horários disponíveis.</p></article>
+          <article class="card"><div class="icon">📋</div><h3>Histórico</h3><p>Visualize informações do pet sem procurar pastas físicas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="agenda">
+      <div class="container two-col">
+        <div>
+          <span class="tag">Agendamento digital</span>
+          <h2>Reserve um horário sem conflitos.</h2>
+          <p>O protótipo apresenta um fluxo simples para selecionar o pet, o serviço, a data e o horário.</p>
+          <ul class="check-list">
+            <li>✓ Redução de choques de horários</li>
+            <li>✓ Visualização dos próximos atendimentos</li>
+            <li>✓ Base para lembretes automáticos</li>
+            <li>✓ Integração entre estética e cuidado veterinário</li>
+          </ul>
+        </div>
+        <form class="form-card" onsubmit="return false;">
+          <h3>Novo agendamento</h3>
+          <label>Nome do tutor<input type="text" placeholder="Ex.: Daniel Leal"></label>
+          <label>Nome do pet<input type="text" placeholder="Ex.: Thor"></label>
+          <label>Serviço
+            <select>
+              <option>Consulta veterinária</option>
+              <option>Vacinação</option>
+              <option>Banho e tosa</option>
+              <option>Cirurgia de pequeno porte</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Data<input type="date"></label>
+            <label>Horário<input type="time"></label>
+          </div>
+          <button class="btn" type="button" onclick="showMessage()">Confirmar agendamento</button>
+          <p id="message" class="message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="historico">
+      <div class="container">
+        <div class="section-heading">
+          <span class="tag">Histórico do pet</span>
+          <h2>Informações organizadas</h2>
+        </div>
+        <div class="history-card">
+          <div class="avatar">🐕</div>
+          <div class="history-main">
+            <h3>Thor <span>Ativo</span></h3>
+            <p>Golden Retriever · 4 anos · Tutor: Daniel</p>
+          </div>
+          <div class="history-data"><small>ÚLTIMA CONSULTA</small><strong>12/09/2026</strong></div>
+          <div class="history-data"><small>PRÓXIMA VACINA</small><strong>10/11/2026</strong></div>
+        </div>
+        <div class="timeline">
+          <div><b>12/09/2026</b><span>Consulta veterinária · Dr. Gabriel</span></div>
+          <div><b>22/08/2026</b><span>Banho e tosa · Serviço de estética</span></div>
+          <div><b>15/07/2026</b><span>Vacinação · Protocolo atualizado</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="contato">
+      <div class="container contact">
+        <div>
+          <span class="tag">PetVida</span>
+          <h2>Praticidade para o tutor e organização para a clínica.</h2>
+          <p>O projeto transforma o controle manual em uma experiência digital mais clara, ajudando a reduzir atrasos, horários ociosos e esquecimentos.</p>
+        </div>
+        <div class="contact-box">
+          <strong>Clínica PetVida & Estética Animal</strong>
+          <p>Atendimento veterinário e estética pet.</p>
+          <p>📞 (41) 0000-0000</p>
+          <p>✉️ contato@petvida.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <span>© 2026 PetVida — Projeto acadêmico.</span>
+      <span>Design Profissional</span>
+    </div>
+  </footer>
+  <script>
+    function showMessage() {
+      const message = document.getElementById('message');
+      message.textContent = 'Protótipo: agendamento confirmado com sucesso!';
+    }
+  </script>
+</body>
+</html>
